@@ -13,8 +13,11 @@ ECCV 2018
 Example of confidence estimation. (a) Reference image from KITTI 2015 dataset, (b) disparity map obtained with MC-CNN, (c) confidence estimated with a local approach (CCNN) and (d) the proposed local-global framework, highlighting regions on which the latter method provides more reliable predictions (red bounding boxes).
 
 For more details: 
-[pdf]
+[pdf](https://vision.disi.unibo.it/~ftosi/papers/eccv18_lgc.pdf)
 
+## Pre-trained models
+
+[Google Drive](https://drive.google.com/open?id=1gXThUY_6pRG2HozAyMB_tY4urd0rIPZh)
 
 ## Requirements
 This code was tested with Tensorflow 1.4, CUDA 8.0 and Ubuntu 16.04.
