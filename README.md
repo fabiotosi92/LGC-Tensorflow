@@ -15,7 +15,7 @@ Example of confidence estimation. (a) Reference image from KITTI 2015 dataset, (
 For more details: 
 [pdf](https://vision.disi.unibo.it/~ftosi/papers/eccv18_lgc.pdf)
 
-## Pre-trained models
+## Pretrained models
 
 [Google Drive](https://drive.google.com/open?id=1gXThUY_6pRG2HozAyMB_tY4urd0rIPZh)
 
