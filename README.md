@@ -40,9 +40,9 @@ Finally, you can load weights from the local and global networks and train __LGC
 ```shell 
 python ./model/main.py --is_training True --epoch 14 --batch_size 128 --patch_size 9 --dataset [path_training_file] --initial_learning_rate 0.003 --log_directory [path_log] --model_name model --model LGC --checkpoint_path [path_checkpoint_ConfNet] [path_checkpoint_CCNN/LFN] --late_fusion
 ```
-Use _--late_fusion_ flag to set __LFN__ as local network. Otherwise, disable it to use __CCNN__ as local network. 
+Use _--late_fusion_ flag to set __LFN__ as local network. Otherwise, disable it to use __CCNN__. 
 
-**Warning:** set _checkpoint_CCNN/LFN_ accordingly for the late fusion network.
+**Warning:** set _checkpoint_CCNN/LFN_ accordingly.
 
 ## Testing
 
@@ -57,12 +57,12 @@ python ./model/main.py --is_training False --batch_size 1 --dataset [path_testin
 For testing __LGCNet__, instead, you can run:
 
 ```shell
-python ./model/main.py --is_training False --batch_size 1 --dataset [path_testing_file] --initial_learning_rate 0.003 --model LGC --checkpoint_path [path_checkpoint_ConfNet] [path_checkpoint_CCNN/LFN] [path_checkpoint_LGC] --output_path [path_output] --late_fusion
+python ./model/main.py --is_training False --batch_size 1 --dataset [path_testing_file] --checkpoint_path [path_checkpoint_ConfNet] [path_checkpoint_CCNN/LFN] [path_checkpoint_LGC] --output_path [path_output] --model LGC --late_fusion
 ```
 
 ## Pretrained models
 
-You can download the pre-trained models, trained on 20 images of KITTI 12 dataset, here:
+You can download the pre-trained models, trained on 20 images of KITTI 12 dataset for AD-CENSUS, SMG and MC-CNN stereo algorithms, here:
 
 [Google Drive](https://drive.google.com/open?id=1gXThUY_6pRG2HozAyMB_tY4urd0rIPZh)
 
